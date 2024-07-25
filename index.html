@@ -1,9 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <title>Mi primera web</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+        table{
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
+    <!--Etiqueta para tablas-->
+    <table>
+        <thead>
+            <!--Etiqueta para fila-->
+            <tr>
+                <!--Cabecera de la tabla-->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--Define elementos en celdas-->
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chanchito Feliz</td>
+                <td>19,90$</td>
+            </tr>
+            <tr>
+                <td>Chanchito Feliz muy feliz</td>
+                <td>29,90$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 49.80$</td>
+        </tfoot>
+    </table>
+
+    <!--Etiqueta lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!--Etiqueta lista ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">Sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">Sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">Sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!--Etiqueta formulario-->
+    <form action="/formulario" method="post">
+        <label for="name">Nombre</label>
+        <input value="Chanchito" type="text" id="name" name="lala" placeholder="Chanchito feliz...">
+        <br>
+        <label for="lastName">Apellido</label>
+        <input value="Feliz" type="text" id="lastName" name="lastName" placeholder="Chanchito triste...">
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea  rows="10" cols="50" name="comentario" id="comentario" placeholder="Ingrese comentario">Este es un valor por defecto</textarea>
+        <br>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+
     <!--Heaginds existen del 1 al 6-->
     <h1>Mi primer heading</h1>
     <h2>Mi segundo heading</h2>
@@ -26,12 +106,10 @@
 
     <!--Etiqueta hipervínculo-->
     <!--Atributo target sirve para poder abrir el vínculo en una pestaña nueva-->
-    <a href="https://www.google.com" target="_blank">Ir a google</a>
+    <a href="https://www.google.com" target="_blank">Ir a google</a><br>
 
-
-
-
-
+    <!--Etiqueta para agregar imágenes-->
+    <img src="img/perro.jpg" alt="" width="400"/>
 
 </body>
 </html>
